@@ -1,0 +1,462 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    border-bottom: 5px solid #777;
+    z-index: 100;
+}
+.Links ul
+{
+    display: flex;
+    align-items: center;
+}
+.Links ul li
+{
+    list-style: none;
+}
+.Links UL li a
+{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #777;
+}
+.Menu .Logo
+{
+    font-size: x-large;
+    justify-self:flex-start;
+}
+.Icons
+{
+    display: block;
+}
+.Icons i
+{
+    padding: 20px 10px;
+    color: #777;
+}
+
+/* =============== */
+.Big
+{
+    background:url(/Images/G.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+}
+.Att
+{
+    line-height: 1.5;
+}
+.Att h1
+{
+    font-size:50px;
+    margin-bottom: 20px;
+}
+.BTN
+{
+    padding: 15px 30px;
+    border-radius: 0px;
+    border: 0px;
+    background: transparent;
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+.Feature
+{
+    margin: 100px ;
+}
+.Data p , .Data h3
+{
+    text-align: center;
+    margin: 20px;
+}
+Data
+{
+    margin: 20px 0px;
+}
+.Row
+{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.Post
+{
+    flex-basis: 31%;
+    margin-bottom: 10PX;
+    transition: 0.5s;
+}
+.Post:hover
+{
+    box-shadow: 0px 0px 20px #777;
+}
+.Post img
+{
+    width: 100%;
+}
+.Post .Info
+{
+
+    text-align: center;
+}
+.Info p , h3 ,button
+{
+    margin-bottom: 15px;
+}
+.Info h3
+{
+    color: #777;
+}
+.BTN2
+{
+    padding: 10px 20px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: black;
+    color: white;
+}
+
+/* ====================== */
+.Big-A
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+.Big-A::after
+{
+    content:'';
+    background: url(/Images/E.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+.Att-A *
+{
+    margin-bottom: 20px;
+}
+.Att-A
+{
+    text-align: center;
+}
+
+.Row-A
+{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.Row-A .Post p
+{
+    padding: 20px 0px;
+}
+.Row-A .Post
+{
+    text-align: center;
+    flex-basis: 23%;
+    border: 1px solid #777;
+}
+
+/* ============== */
+footer
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    border-bottom: 3px solid #777;
+}
+footer div
+{
+    padding: 20px;
+}
+footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer a
+{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    padding: 10px 0px ;
+}
+.Foot
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+.Last
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.Last .Icon i
+{
+    padding: 10px;
+}
+.Last *
+{
+    padding: 10px;
+}
+
+@media (max-width:700px)
+{
+    .Menu
+    {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .Big
+    {
+        padding: 20px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Att
+    {
+        line-height: 1;
+        padding: 10px;
+        text-align: center;
+    }
+    .Att H1
+    {
+        font-size: 30px;
+
+    }
+    .Feature
+    {
+        margin: 30px;
+    }
+    .Post
+    {
+        flex-basis: 48%;
+    }
+    .Big-A
+    {
+        height: 50vh;
+    }
+    .Row-A .Post
+    {
+        flex-basis: 48%;
+    }
+    footer
+    {
+        flex-direction: column;
+    }
+    .Last
+    {
+        flex-direction: column;
+    }
+}
+
+/* =======BLOG======== */
+.Blog
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.B-Row
+{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    padding: 20px;
+}
+.B-Row img
+{
+    width: 100%;
+}
+.B-Post
+{
+    margin: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.B-Post p
+{
+    color: #777;
+}
+.B-Post *
+{
+    margin: 10px 0px;
+}
+.B-Post .Image
+{
+    position: relative;
+}
+.B-Post h3
+{
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    color: white;
+}
+.Image h3 button
+{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+.B-Post:hover h3
+{
+    opacity: 1;
+    transform: translateY(-60%);
+}
+.B-Post:hover img
+{
+    opacity: 0.8;
+}
+@media (max-width:700px)
+{
+    .B-Row
+    {
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 0px;
+    }
+    .B-Post
+    {
+        margin: 0px;
+    }
+    .B-Row .BTN
+    {
+        padding: 5px 20px;
+    }
+}
+
+.Contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.Contact >div
+{
+    margin: 20px;
+}
+.Map
+{
+    width: 100%;
+}
+.Form
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.NE
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.NE >div
+{
+    width: 48%;
+}
+.NE input , textarea
+{
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 10px 10px;
+    width: 100%;
+}
+textarea 
+{
+    width: 100%;
+}
+
+.Meet
+{
+    justify-self: center;
+}
+.One * , .Two *
+{
+    margin-bottom: 10px;
+}
+form>div
+{
+    margin-bottom:10px ;
+    color: #777;
+}
+input:focus , textarea:focus
+{
+    border: 2px solid #777;
+    outline: none;
+}
+@media (max-width:700px)
+{
+    .Form
+    {
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .Meet
+    {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    .Contact >div
+    {
+        margin: 0px;
+    }
+    .Meet p
+    {
+        color: rgb(255, 0, 0);
+    }
+    .NE
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .NE >div
+    {
+        width: 100%;
+    }
+}
